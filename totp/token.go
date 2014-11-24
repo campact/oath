@@ -10,6 +10,10 @@ import (
 	"time"
 )
 
+const (
+	VERSION = "1.0.0"
+)
+
 type Token struct {
 	key      []byte
 	epoch    time.Time
