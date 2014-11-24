@@ -1,0 +1,10 @@
+checkout:
+  post:
+    - mkdir -p ${GOPATH%%:*}/src/github.com/${CIRCLE_PROJECT_USERNAME}
+    - ln -sf $(pwd) ${GOPATH%%:*}/src/github.com/${CIRCLE_PROJECT_USERNAME}/$(basename $(pwd))
+dependencies:
+  override:
+    - go get -d -t ./...
+test:
+  override:
+    - go test -v ./...
