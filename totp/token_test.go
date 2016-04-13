@@ -9,7 +9,7 @@ import (
 	"hash"
 	"time"
 
-	"github.com/nubo/oath/totp"
+	"github.com/campact/oath/totp"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )
